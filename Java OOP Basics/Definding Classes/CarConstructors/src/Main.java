@@ -1,5 +1,3 @@
-package CarInfo;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -16,19 +14,19 @@ public class Main {
 
             String[] tokens = scanner.nextLine().split("\\s+");
 
-            Car car = new Car();
+            Car car = null;
 
-            car.setBrand(tokens[0]);
-            car.setModel(tokens[1]);
-            car.setHorsePower(Integer.parseInt(tokens[2]));
+            if(tokens.length == 1){
+                car = new Car(tokens[0]);
+            }else {
+                car = new Car(tokens[0], tokens[1], Integer.parseInt(tokens[2]));
+            }
 
             cars.add(car);
         }
-
         for (Car car : cars) {
 
             System.out.println(car.carInfo());
         }
-
     }
 }
