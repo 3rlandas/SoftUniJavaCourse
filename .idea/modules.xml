@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Java OOP Basics/Definding Classes/Definding Classes.iml" filepath="$PROJECT_DIR$/Java OOP Basics/Definding Classes/Definding Classes.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java OOP Basics/Definding Classes/Homework/Homework.iml" filepath="$PROJECT_DIR$/Java OOP Basics/Definding Classes/Homework/Homework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java Advanced/Java Advanced.iml" filepath="$PROJECT_DIR$/Java Advanced/Java Advanced.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java OOP Basics/Java OOP Basics.iml" filepath="$PROJECT_DIR$/Java OOP Basics/Java OOP Basics.iml" />
       <module fileurl="file://$PROJECT_DIR$/SoftUni Java Course.iml" filepath="$PROJECT_DIR$/SoftUni Java Course.iml" />
     </modules>
