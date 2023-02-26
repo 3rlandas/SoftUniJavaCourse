@@ -16,9 +16,9 @@ public class Main {
 
             Car car = null;
 
-            if(tokens.length == 1){
+            if (tokens.length == 1) {
                 car = new Car(tokens[0]);
-            }else {
+            } else {
                 car = new Car(tokens[0], tokens[1], Integer.parseInt(tokens[2]));
             }
 

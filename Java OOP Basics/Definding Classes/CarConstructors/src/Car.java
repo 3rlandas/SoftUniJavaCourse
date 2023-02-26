@@ -18,6 +18,7 @@ public class Car {
         this.horsePower = horsePower;
 
     }
+
     public String getBrand() {
         return this.brand;
     }
