@@ -65,4 +65,11 @@ public class Employee {
         this.position = position;
     }
 
+    @Override
+    public String toString() {
+        String emailToPrint = this.getEmail() == null ? "n/a" : this.getEmail();
+        int ageToPrint = this.getAge() == -1 ? -1 : this.getAge();
+
+        return String.format("%s %.2f %s %d", this.getName(), this.getSalary(), emailToPrint, ageToPrint);
+    }
 }
