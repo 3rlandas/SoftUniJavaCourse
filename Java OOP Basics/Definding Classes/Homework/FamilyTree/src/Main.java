@@ -1,89 +1,84 @@
 import java.util.*;
 
 public class Main {
+
     public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
 
-        Scanner scanner = new Scanner(System.in);
+        String searchedPersonData = in.nextLine();
+        Person searchedPerson = new Person();
 
-        Map<String, Person> data = new HashMap<>();
+        Map<String, Person> personByName = new HashMap<>();
+        Map<String, Person> personByBirthday = new HashMap<>();
 
-        List<String> inputData = new ArrayList<>();
+        List<String> allInputData = new ArrayList<>();
 
-        String characterName = null;
-        String characterBirthday = null;
-
-        String input = scanner.nextLine();
-
-        if (input.contains(" ")) {
-            characterName = input;
-        } else if (input.contains("/")) {
-            characterBirthday = input;
-        }
-
-        input = scanner.nextLine();
-
-        while (!input.contains("End")) {
-
-            if (input.contains("-")) {
-                inputData.add(input);
-
+        String command = in.nextLine();
+        while (!"End".equals(command)) {
+            if (command.contains("-")) {
+                allInputData.add(command);
             } else {
+                String[] personData = command.split("\\s+");
+                String name = personData[0] + " " + personData[1];
+                String birthday = personData[2];
 
-                String[] splitData = input.split("\s+");
-                String fullName = splitData[0] + " " + splitData[1];
-                if (fullName.equals(characterName)) {
-                    characterBirthday = splitData[2];
+                if (name.equals(searchedPersonData) || birthday.equals(searchedPersonData)) {
+                    searchedPerson.setName(name);
+                    searchedPerson.setBirthday(birthday);
                 } else {
-                    inputData.add(input);
+                    Person person = new Person(name, birthday);
+                    personByName.put(name, person);
+                    personByBirthday.put(birthday, person);
                 }
             }
-            input = scanner.nextLine();
+
+            command = in.nextLine();
         }
 
-        for (String a : inputData) {
+        for (String data : allInputData) {
+            String[] tokens = data.split(" - ");
 
-            String resultLeftSideName = null;
-            String resultLeftSideBirthday = null;
-            String resultRightSideName= null;
-            String resultRightSideBirthday = null;
-           // String birthday = null;
-            String[] result = a.split("(?<=[a-zA-Z-0-9])\\s-\\s|\\s(?=\\d)");
-            if (!result[0].contains("/")) {
-                resultLeftSideName = result[0];
-            }else{
-                resultLeftSideBirthday = result[0];
+            if (tokens[0].equals(searchedPerson.getName()) || tokens[0].equals(searchedPerson.getBirthday()) ||
+                    tokens[1].equals(searchedPerson.getName()) || tokens[1].equals(searchedPerson.getBirthday())) {
+                String parentData = tokens[0];
+                String childData = tokens[1];
+
+                if (childData.equals(searchedPerson.getName()) || childData.equals(searchedPerson.getBirthday())) {
+                    Person parent = null;
+
+                    if (personByName.containsKey(parentData)) {
+                        parent = personByName.get(parentData);
+                    }
+
+                    if (personByBirthday.containsKey(parentData)) {
+                        parent = personByBirthday.get(parentData);
+                    }
+
+                    searchedPerson.addParent(parent);
+                } else if (parentData.equals(searchedPerson.getName()) || parentData.equals(searchedPerson.getBirthday())) {
+                    Person child = null;
+
+                    if (personByName.containsKey(childData)) {
+                        child = personByName.get(childData);
+                    }
+
+                    if (personByBirthday.containsKey(childData)) {
+                        child = personByBirthday.get(childData);
+                    }
+
+                    searchedPerson.addChild(child);
+                }
             }
-            if (!result[1].contains("/")) {
-                resultRightSideName = result[1];
-            } else {
-                resultRightSideBirthday = result[1];
-            }
+        }
 
-            if (a.contains(" - ")) {
-
-                Person.Children children = new Person.Children(characterName, resultLeftSideName,
-                        resultLeftSideBirthday, resultRightSideName, resultRightSideBirthday);
-
-
-
-
-
-                /*if (characterName.equals(result[0])) {
-                    Person.Children children = new Person.Children(birthday);
-                } else if (characterBirthday.equals(result[0])) {
-
-                    Person.Children children = new Person.Children(resultLeftSideName, birthday);
-
-                }*/
-
-
-
-            } else {
-
-
-            }
-
-
+        System.out.println(searchedPerson);
+        System.out.println("Parents:");
+        for (Person person : searchedPerson.getParents()) {
+            System.out.println(person);
+        }
+        System.out.println("Children:");
+        for (Person person : searchedPerson.getChildren()) {
+            System.out.println(person);
         }
     }
 }
