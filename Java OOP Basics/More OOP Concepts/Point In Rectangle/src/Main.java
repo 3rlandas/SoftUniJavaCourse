@@ -6,7 +6,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         String[] input = scanner.nextLine().split("\\s+");
-       // int[] coordinates = Arrays.stream(input.split("\\s+")).mapToInt(Integer::parseInt).toArray();
 
         int bottomLeftX = Integer.parseInt(input[0]);
         int bottomLeftY = Integer.parseInt(input[1]);
@@ -15,7 +14,7 @@ public class Main {
 
         Rectangle rectangle = new Rectangle(bottomLeftX, bottomLeftY, topRightX, topRightY);
 
-        int number = scanner.nextInt();
+        int number = Integer.parseInt(scanner.nextLine());
 
         for (int i = 0; i < number; i++) {
 
@@ -25,10 +24,7 @@ public class Main {
 
             Point point = new Point(X, Y);
 
+            System.out.println(rectangle.contains(point));
         }
-
-
-
-
     }
 }

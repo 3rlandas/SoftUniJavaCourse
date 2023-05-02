@@ -4,7 +4,7 @@ public class Point {
     private int Y;
 
     public int getY() {
-        return Y;
+        return this.Y;
     }
 
     public int getX() {
