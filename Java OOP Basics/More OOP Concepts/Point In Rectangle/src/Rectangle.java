@@ -14,7 +14,7 @@ public class Rectangle {
     }
 
     public int getBottomLeftY() {
-        return bottomLeftY;
+       return bottomLeftY;
     }
 
     public int getBottomLeftX() {
