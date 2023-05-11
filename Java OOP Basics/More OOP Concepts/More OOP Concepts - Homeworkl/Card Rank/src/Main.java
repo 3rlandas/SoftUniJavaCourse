@@ -7,8 +7,10 @@ public class Main {
         String input = scanner.nextLine();
 
         System.out.println(input + ":");
-        for (Deck value : Deck.values()) {
-            System.out.printf("Ordinal value: %d; Name value: %s\n", value.getValue(),  value);
+
+        for (Cards value : Cards.values()) {
+
+        System.out.printf("Ordinal value: %d; Name value: %s\n",value.getValues(), value);
         }
 
     }
