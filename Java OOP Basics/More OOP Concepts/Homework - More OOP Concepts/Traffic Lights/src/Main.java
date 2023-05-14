@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
         Color[] signals = Arrays.stream(scanner.nextLine().split(" ")).map(String::toUpperCase)
                 .map(Color::valueOf).toArray(Color[]::new);
