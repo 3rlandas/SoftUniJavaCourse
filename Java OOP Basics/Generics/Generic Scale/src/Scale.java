@@ -17,5 +17,4 @@ public class Scale<T extends Comparable<T>> {
         }
         return left;
     }
-
 }

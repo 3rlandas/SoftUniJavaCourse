@@ -1,4 +1,3 @@
-
 public class Main {
     public static void main(String[] args) {
         Integer[] intArray = ArrayCreator.create(3, 10);
