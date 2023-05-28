@@ -24,22 +24,16 @@ public class Main {
             mood = false;
         }
 
-        String[] thirdInput = scanner.nextLine().split(" ");
-
-        name = thirdInput[0];
-        double accountBalance = Double.parseDouble(thirdInput[1]);
-        String bankName = thirdInput[2];
-
-
-        Threeuple<String, Integer> secondMap = new Threeuple<>(name, numberOfHobbies);
+        Threeuple<String, Integer, Boolean> secondMap = new Threeuple<>(name, numberOfHobbies, mood);
         System.out.println(secondMap);
 
         String[] thirdInput = scanner.nextLine().split(" ");
 
-        int number = Integer.parseInt(thirdInput[0]);
-        Double doubleNumber = Double.parseDouble(thirdInput[1]);
+        name = thirdInput[0];
+        Double accountBalance = Double.parseDouble(thirdInput[1]);
+        String bankName = thirdInput[2];
 
-        Threeuple<Integer, Double> thirdMap = new Threeuple<>(number, doubleNumber);
+        Threeuple<String, Double, String> thirdMap = new Threeuple<>(name, accountBalance, bankName);
         System.out.println(thirdMap);
     }
 }
