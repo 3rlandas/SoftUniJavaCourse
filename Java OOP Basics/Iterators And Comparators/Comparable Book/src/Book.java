@@ -2,22 +2,22 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Book implements Comparable<Book> {
-    private String bookName;
+    private String title;
     private int year;
     private ArrayList<String> authors;
 
-    public Book(String name, int year, String... authors) {
+    public Book(String title, int year, String... authors) {
         this.setAuthors(authors);
-        this.setBookName(bookName);
+        this.setTitle(title);
         this.setYear(year);
     }
 
-    public String getBookName() {
-        return bookName;
+    public String getTitle() {
+        return title;
     }
 
-    public void setBookName(String bookName) {
-        this.bookName = bookName;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public int getYear() {
@@ -38,7 +38,7 @@ public class Book implements Comparable<Book> {
 
     @Override
     public int compareTo(Book book) {
-        if (this.getBookName().compareTo(book.getBookName()) == 0) {
+        if (this.getTitle().compareTo(book.getTitle()) == 0) {
 
             if (this.getYear() > book.getYear()) {
                 return 1;
@@ -49,7 +49,7 @@ public class Book implements Comparable<Book> {
 
             }
         } else {
-            return this.getBookName().compareTo(book.getBookName());
+            return this.getTitle().compareTo(book.getTitle());
         }
     }
 }
