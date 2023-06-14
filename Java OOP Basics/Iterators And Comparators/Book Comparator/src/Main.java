@@ -15,7 +15,7 @@ public class Main {
         BookComparator bookComparator = new BookComparator();
         Collections.sort(bookList, bookComparator);
 
-        bookList.forEach(currentBook ->{
+        bookList.forEach(currentBook -> {
 
             System.out.printf("Title: %s written in %d%n", currentBook.getTitle());
         });
