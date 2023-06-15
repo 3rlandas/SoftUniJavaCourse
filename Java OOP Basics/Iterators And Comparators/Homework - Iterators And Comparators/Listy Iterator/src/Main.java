@@ -22,8 +22,16 @@ public class Main {
                 case "Move":
                     System.out.println(listyIterator.move());
                     break;
-            }
 
+                case "HasNext":
+                    System.out.println(listyIterator.hasNext());
+                    break;
+
+                case "Print":
+                    listyIterator.print();
+                    break;
+            }
+            command = scanner.nextLine();
         }
     }
 }

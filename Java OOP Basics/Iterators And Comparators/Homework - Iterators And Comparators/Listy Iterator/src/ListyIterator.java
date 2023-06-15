@@ -41,4 +41,21 @@ public class ListyIterator {
             return false;
         }
     }
+
+    public boolean hasNext() {
+        if (this.index + 1 <= this.data.size() - 1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public void print() {
+        if(this.data.isEmpty()){
+
+            System.out.println("Invalid Operation!");
+        }else {
+            System.out.println(this.data.get(this.index));
+        }
+    }
 }
