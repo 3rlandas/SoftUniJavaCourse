@@ -26,6 +26,9 @@ public class Main {
                 case "HasNext":
                     System.out.println(listyIterator.hasNext());
                     break;
+                case "PrintAll":
+                    listyIterator.printAll();
+                    break;
 
                 case "Print":
                     listyIterator.print();

@@ -28,7 +28,6 @@ public class ListyIterator {
         } else {
             this.index = 0;
         }
-
     }
 
     public boolean move() {
@@ -57,5 +56,17 @@ public class ListyIterator {
         } else {
             System.out.println(this.data.get(this.index));
         }
+    }
+
+    public void printAll() {
+        if (this.data.isEmpty()) {
+
+            System.out.println("Invalid Operation!");
+        } else {
+            this.data.forEach((eachData) -> {
+                System.out.printf("%s ", eachData);
+            });
+        }
+        System.out.println();
     }
 }
