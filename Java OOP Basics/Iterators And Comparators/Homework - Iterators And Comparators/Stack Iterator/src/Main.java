@@ -9,8 +9,6 @@ public class Main {
 
         String[] input = scanner.nextLine().replaceAll(",", "").split("\\s+");
 
-        String action = input[0];
-
         while (!input[0].equals("END")) {
 
             switch (input[0]) {
