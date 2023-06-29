@@ -26,6 +26,11 @@ public class Main {
 
         long count = data.stream().filter(p -> selectedPerson.compareTo(p) == 0).count();
 
+        if(count == 1){
 
+            System.out.println("No matches");
+        }else{
+            System.out.printf("%d %d %d", count, data.size() - count, data.size());
+        }
     }
 }
