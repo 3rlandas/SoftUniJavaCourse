@@ -1,10 +1,7 @@
 import java.util.Comparator;
-import java.util.HashMap;
 
 public class Clinics implements Comparator<Pets> {
 
-    //  private String clinicName;
-    //  private int clinicRooms;
     private Pets[] numberOfRooms;
 
     public Clinics(int countRooms) {
@@ -19,22 +16,6 @@ public class Clinics implements Comparator<Pets> {
         this.numberOfRooms = new Pets[countRooms];
 
     }
-
-   /* public String getClinicName() {
-        return clinicName;
-    }
-
-    public void setClinicName(String clinicName) {
-        this.clinicName = clinicName;
-    }
-
-    public int getClinicRooms() {
-        return clinicRooms;
-    }
-
-    public void setClinicRooms(int clinicRooms) {
-        this.clinicRooms = clinicRooms;
-    }*/
 
     @Override
     public int compare(Pets o1, Pets o2) {
@@ -103,10 +84,23 @@ public class Clinics implements Comparator<Pets> {
 
     public void printClinic() {
 
-        int i = 0;
-      //  for ( Pets[] map : this.numberOfRooms.length) {
+        for (Pets pet : this.numberOfRooms) {
 
-       // }
+            if (pet != null) {
+                System.out.println(pet.toString());
+            } else {
+                System.out.println("Room empty");
+            }
+        }
+    }
 
+    public void printRoom(int room) {
+        if (this.numberOfRooms[room -1] != null) {
+
+            System.out.println(this.numberOfRooms[room -1].toString());
+
+        } else {
+            System.out.println("Room empty");
+        }
     }
 }

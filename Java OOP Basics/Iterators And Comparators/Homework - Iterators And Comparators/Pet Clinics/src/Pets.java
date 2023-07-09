@@ -1,5 +1,3 @@
-import java.util.Map;
-
 public class Pets {
     private String name;
     private int age;
@@ -12,12 +10,8 @@ public class Pets {
         this.type = type;
     }
 
-    public Pets(Map<String,Pets> petsList) {
-
-    }
-
     @Override
     public String toString() {
-        return String.format("%s, %d, %s", name, age, type);
+        return String.format("%s %d %s", name, age, type);
     }
 }

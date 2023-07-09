@@ -47,12 +47,11 @@ public class Main {
                     break;
                 case "Print":
                     if (input.length == 2) {
-                       // Pets pets = new Pets(petsList);
-                       // System.out.println(pets);
+
                         clinicsList.get(input[1]).printClinic();
 
                     } else if (input.length == 3) {
-
+                        clinicsList.get(input[1]).printRoom(Integer.parseInt(input[2]));
                     }
                     break;
             }
