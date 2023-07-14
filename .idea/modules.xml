@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Java OOP Basics/Functional Programming/Add VAT/Add VAT.iml" filepath="$PROJECT_DIR$/Java OOP Basics/Functional Programming/Add VAT/Add VAT.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java OOP Basics/Defining Classes/BankAccount/BankAccount.iml" filepath="$PROJECT_DIR$/Java OOP Basics/Defining Classes/BankAccount/BankAccount.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java OOP Basics/Iterators And Comparators/Book/Book.iml" filepath="$PROJECT_DIR$/Java OOP Basics/Iterators And Comparators/Book/Book.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java OOP Basics/Iterators And Comparators/Book Comparator/Book Comparator.iml" filepath="$PROJECT_DIR$/Java OOP Basics/Iterators And Comparators/Book Comparator/Book Comparator.iml" />
@@ -16,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/Java OOP Basics/Defining Classes/Homework - Defining Classes/CompanyRoster/CompanyRoster.iml" filepath="$PROJECT_DIR$/Java OOP Basics/Defining Classes/Homework - Defining Classes/CompanyRoster/CompanyRoster.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java OOP Basics/Iterators And Comparators/Comparable Book/Comparable Book.iml" filepath="$PROJECT_DIR$/Java OOP Basics/Iterators And Comparators/Comparable Book/Comparable Book.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java OOP Basics/Iterators And Comparators/Homework - Iterators And Comparators/Comparing Objects/Comparing Objects.iml" filepath="$PROJECT_DIR$/Java OOP Basics/Iterators And Comparators/Homework - Iterators And Comparators/Comparing Objects/Comparing Objects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java OOP Basics/Functional Programming/Count Uppercase Words/Count Uppercase Words.iml" filepath="$PROJECT_DIR$/Java OOP Basics/Functional Programming/Count Uppercase Words/Count Uppercase Words.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java OOP Basics/Generics/Homework - Generics/Custom List/Custom List.iml" filepath="$PROJECT_DIR$/Java OOP Basics/Generics/Homework - Generics/Custom List/Custom List.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java OOP Basics/Generics/Homework - Generics/Custom List Iterator/Custom List Iterator.iml" filepath="$PROJECT_DIR$/Java OOP Basics/Generics/Homework - Generics/Custom List Iterator/Custom List Iterator.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java OOP Basics/Generics/Homework - Generics/Custom List Sorter/Custom List Sorter.iml" filepath="$PROJECT_DIR$/Java OOP Basics/Generics/Homework - Generics/Custom List Sorter/Custom List Sorter.iml" />
@@ -60,6 +62,7 @@
       <module fileurl="file://$PROJECT_DIR$/Java OOP Basics/Iterators And Comparators/Homework - Iterators And Comparators/Stack Iterator/Stack Iterator.iml" filepath="$PROJECT_DIR$/Java OOP Basics/Iterators And Comparators/Homework - Iterators And Comparators/Stack Iterator/Stack Iterator.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java OOP Basics/Iterators And Comparators/Homework - Iterators And Comparators/Strategy Pattern/Strategy Pattern.iml" filepath="$PROJECT_DIR$/Java OOP Basics/Iterators And Comparators/Homework - Iterators And Comparators/Strategy Pattern/Strategy Pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java OOP Basics/More OOP Concepts/Student System/Student System.iml" filepath="$PROJECT_DIR$/Java OOP Basics/More OOP Concepts/Student System/Student System.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java OOP Basics/Functional Programming/Sum All Numbers/Sum All Numbers.iml" filepath="$PROJECT_DIR$/Java OOP Basics/Functional Programming/Sum All Numbers/Sum All Numbers.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java OOP Basics/Functional Programming/Sum Numbers/Sum Numbers.iml" filepath="$PROJECT_DIR$/Java OOP Basics/Functional Programming/Sum Numbers/Sum Numbers.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java OOP Basics/Generics/Homework - Generics/Threeuple/Threeuple.iml" filepath="$PROJECT_DIR$/Java OOP Basics/Generics/Homework - Generics/Threeuple/Threeuple.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java OOP Basics/More OOP Concepts/Homework - More OOP Concepts/Traffic Lights/Traffic Lights.iml" filepath="$PROJECT_DIR$/Java OOP Basics/More OOP Concepts/Homework - More OOP Concepts/Traffic Lights/Traffic Lights.iml" />
