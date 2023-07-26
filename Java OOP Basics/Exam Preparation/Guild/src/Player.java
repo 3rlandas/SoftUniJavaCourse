@@ -13,9 +13,7 @@ public class Player {
 
     @Override
     public String toString() {
-        return "Player " + name + ": " + clazz + "\n"
-                + "Rank: " + rank + "\n"
-                + "Description: " + description;
+        return String.format("Player %s: %s%nRank: %s%nDescription: %s", this.getName(), this.getClazz(), this.getRank(), this.getDescription());
     }
 
     public String getName() {
