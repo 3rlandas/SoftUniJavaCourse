@@ -12,8 +12,12 @@ public class Vehicle {
         this.fuelConsumption = DEFAULT_FUEL_CONSUMPTION;
     }
 
-    public void drive(double kilometers){
+    public void drive(double kilometers) {
 
+        double fuelNeeded = kilometers * fuelConsumption;
+        if (this.fuel >= fuelNeeded){
+            this.fuel -= fuelNeeded;
+        }
     }
 
     public double getFuelConsumption() {

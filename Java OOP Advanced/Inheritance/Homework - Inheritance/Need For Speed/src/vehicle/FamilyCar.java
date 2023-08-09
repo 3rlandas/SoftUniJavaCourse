@@ -1,6 +1,6 @@
 package vehicle;
 
-public class FamilyCar extends Vehicle{
+public class FamilyCar extends Car{
     public FamilyCar(double fuel, int horsePower) {
         super(fuel, horsePower);
     }
