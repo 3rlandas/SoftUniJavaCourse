@@ -3,7 +3,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,7 +13,7 @@ public class Main {
 
            String[] input = reader.readLine().split("\\s+");
 
-           while (!input[0].equals("end")) {
+           while (!input[0].equals("End")) {
 
                String name;
                String id;
@@ -27,22 +26,13 @@ public class Main {
                        id = input[3];
                        birthDate = input[4];
 
-                       // Person citizen = new Citizen(name, age, id, birthDate);
                        birthDates.add(new Citizen(name, age, id, birthDate));
                        break;
-
-                /*case "Robot":
-                    String model = input[1];
-                    id = input[2];
-
-                    Robot robot = new Robot(model, id);
-                    break;*/
 
                    case "Pet":
 
                        name = input[1];
                        birthDate = input[2];
-                       // Pets pets = new Pets(name, birthDate);
                        birthDates.add(new Pets(name, birthDate));
 
                        break;

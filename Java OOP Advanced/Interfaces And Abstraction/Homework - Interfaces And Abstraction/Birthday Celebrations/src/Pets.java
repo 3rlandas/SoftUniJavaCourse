@@ -1,6 +1,6 @@
 public class Pets implements Birthable{
-    private String name;
-    private String birthDate;
+    private final String name;
+    private final String birthDate;
 
     public Pets(String name, String birthDate) {
         this.name = name;
@@ -8,7 +8,7 @@ public class Pets implements Birthable{
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     @Override

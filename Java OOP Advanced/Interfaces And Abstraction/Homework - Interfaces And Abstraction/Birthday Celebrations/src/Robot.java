@@ -1,6 +1,6 @@
 public class Robot implements Identifiable{
-   private String id;
-   private String model;
+   private final String id;
+   private final String model;
 
     public Robot(String id, String model) {
         this.id = id;
@@ -8,7 +8,7 @@ public class Robot implements Identifiable{
     }
 
     public String getModel() {
-        return model;
+        return this.model;
     }
 
     @Override

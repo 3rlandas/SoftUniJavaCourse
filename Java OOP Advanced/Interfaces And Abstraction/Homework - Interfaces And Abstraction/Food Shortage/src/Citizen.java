@@ -1,14 +1,18 @@
-public class Citizen implements Person, Identifiable, Birthable{
-    private final String name;
-    private final int age;
-    private final String id;
-    private final String birthDate;
+public class Citizen implements Person, Identifiable, Birthable, Buyer{
+    private static final int INCREASE_FOOD_WITH_TEN = 10;
+
+    private String name;
+    private int age;
+    private String id;
+    private String birthDate;
+    private int food;
 
     public Citizen(String name, int age, String id, String birthDate) {
         this.name = name;
         this.age = age;
         this.id = id;
         this.birthDate = birthDate;
+        this.food = 0;
     }
 
     @Override
@@ -32,7 +36,12 @@ public class Citizen implements Person, Identifiable, Birthable{
     }
 
     @Override
-    public String toString() {
-        return super.toString();
+    public void buyFood() {
+        this.food += INCREASE_FOOD_WITH_TEN;
+    }
+
+    @Override
+    public int getFood() {
+        return this.food;
     }
 }
