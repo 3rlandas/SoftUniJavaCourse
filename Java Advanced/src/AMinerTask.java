@@ -25,6 +25,7 @@ public class AMinerTask {
         for (Map.Entry<String, Integer> datum : data.entrySet()) {
 
             System.out.printf("%s -> %d\n", datum.getKey(), datum.getValue());
+
         }
     }
 }
